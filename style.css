@@ -73,6 +73,14 @@ section .signin {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
+section .avater {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+}
 section .signin .content {
     position: relative;
     width: 100%;
@@ -87,6 +95,8 @@ section .signin .content h2 {
     font-size: 2em;
     color: #0f0;
     text-transform: uppercase;
+    position: relative;
+    bottom: -10px;
 }
 
 section .signin .content .form {
@@ -140,12 +150,22 @@ section .signin .content .form .inputbox i {
 
 .signin .content .form .links a {
     color: white;
+    font-weight: 600;
     text-decoration: none;
 }
+.signin .content .form .links a:hover
+{
+    color: #07ff30;
+}
+
 
 .signin .content .form .links a:nth-child(2) {
     color: #0f0;
     font-weight: 600;
+}
+.signin .content .form .links a:nth-child(2):hover
+{
+    color: white;
 }
 
 .signin .content .form .inputbox input[type="submit"] {
@@ -156,6 +176,12 @@ section .signin .content .form .inputbox i {
     font-size: 1.25em;
     letter-spacing: 0.05em;
     cursor: pointer;
+    border-radius: 20px;
+}
+.signin .content .form .inputbox input[type="submit"]:hover
+{
+    background: black;
+    color: white
 }
 
 @media (max-width: 900px) {
